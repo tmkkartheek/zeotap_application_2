@@ -1,0 +1,10 @@
+# docker-compose.yml
+version: '3.7'
+
+services:
+  weather_monitoring:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - API_KEY=${API_KEY}
